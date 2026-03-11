@@ -44,11 +44,7 @@
     ```mysql
         SELECT *
         FROM exams
-        WHERE
-        	YEAR(exams.date) = 2020 AND
-            MONTH(exams.date) = 06 AND
-            DAY(exams.date) = 20 AND
-            HOUR(exams.hour) >= 14
+        WHERE exams.date LIKE "2020-06-20" AND exams.hour >= "14:00:00"
     ```
 
 ---
